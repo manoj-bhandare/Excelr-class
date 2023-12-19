@@ -1,0 +1,113 @@
+Type-Casting(Type-Conversion)
+-------------------------
+Definition: In Java, Type-Casting is a process that converts a data-type into another data-type.
+
+Type-Casting can be done in two ways:
+---------------------------------------
+1. Automatic Conversion
+2. Manual Conversion
+
+1. Automatic Conversion
+-----------------------
+The Automatic conversion is done by the compiler itself.
+
+	Two Types of Automatic Conversion
+	----------------------------------
+	1. Auto-Upcasting
+	2. Auto-Downcasting
+
+2. Manual Conversion
+---------------------
+The Manual Conversion is done by the programmer.
+
+	Two Types of Manual Conversion
+	----------------------------------
+	1. Explicite-Upcasting
+	2. Explicite-Downcasting
+
+In Java we have Two types of Casting
+-------------------------------------
+1. Primitive Type-Casting
+2. Reference Type-Casting
+
+1.Primitive Type-Casting
+-----------------------------
+
+In Java we have 8 primitive datatypes. Among them 6 are number-types
+
+Primitive number-data-types casting
+------------------------------------
+
+              >______________________________________> Wider(Widening Casting)
+ ---------------------------------------------------------------------------------
+| byte <-------- short <------ int <-------- long <------- float <-------- double  |
+ ---------------------------------------------------------------------------------
+Narrower(Narrowing Casting) <______________________________________<
+
+
+Note: Auto Casting is also called as Implicite Casting
+
+
+Auto Widening Type Casting 
+---------------------------
+
+Converting a lower data-type into a higher data-type is called widening type casting. It is also known as implicit conversion. It is done automatically. It is safe because there is no chance of loosing data. 
+
+Auto Widening Type Casting can takes place when:
+------------------------------------------------
+
+1. Both data-types must be compatible with each other
+2. The target must be larger than the source type
+
+Ex: Proper:
+	int i = 10;
+	double d = i;
+Ex: Wrong:
+        String str = "abc";
+	double d = str;
+Ex: Proper:
+	float f = 10.0f;
+	double d = f;
+Ex: Wrong:
+        double d = 10.0;
+	int i = d;
+
+Note: When There is no loss of data then only compiler takes the responsibility of converting, By doing Auto conversion.
+
+Note: Explicite Up-Casting is not neccessary. because compiler only does that job for us.
+
+Note: When there is loss of data. converting from higher range to the smaller range there is a chance of data loss. so compiler will not take that responsibility. it will gives you error.
+Ex: Explicite down-casting
+
+incompatible types: possible lossy conversion from Large_datatype to Small_datatype
+
+Ex: We have 1ltr of bottle with full water, then we have half 1/2(half-liter) of water bottle which is completely empty.
+Task: Fill All the water which is inside the 1ltr bottle to the half-liter bottle.
+Result - 500ml water would be wasted. Water loss.
+Conclusion: Not Recommended
+
+
+Explicite down-casting - done by the programmer itself
+Note: When the target type is smaller and the source type larger. compiler will not do the conversion. programmer only has to do it.
+Ex: 
+double d = 10.0;
+int i = (int)d;
+
+Note: Explicit down-casting is also called as narrowing
+
+ ----------------------------------------------------
+|double --> float --> long --> int --> short --> byte|	
+ ----------------------------------------------------
+
+ Converting a higher data-type into a lower one is called narrowing type-casting. It is also known as explicit conversion or casting. It is done by the programmer. if not then compiler gives an error.
+
+ Note: There is no Auto-Down casting
+
+
+
+
+
+
+
+
+
