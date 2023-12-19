@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+E:\EXCELR\EXCELRCLASS-12-2\IDE-development\Eclipse-development\.metadata\.plugins\org.eclipse.jdt.core
+2364060982.index
+2380175872.index
+1865797976.index
